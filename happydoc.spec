@@ -10,7 +10,7 @@ Version:	%(echo %ver | sed 's/_/./g')
 Release:	1
 License:	BSD-like
 Group:		Development/Tools
-Source0:	http://prdownloads.sourceforge.net/happydoc/%{pname}_r%{ver}.tar.gz
+Source0:	http://dl.sourceforge.net/happydoc/%{pname}_r%{ver}.tar.gz
 URL:		http://happydoc.sourceforge.net/
 BuildRequires:	rpm-pythonprov >= 4.0.2-50
 %pyrequires_eq	python-modules
