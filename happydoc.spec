@@ -1,7 +1,7 @@
 %include	/usr/lib/rpm/macros.python
 
-%define pname HappyDoc
-%define ver 2_0_1
+%define		pname HappyDoc
+%define		ver 2_0_1
 
 Summary:	Tool for extracting documentation from Python source code
 Summary(pl):	Narzêdzie do generowania dokumentacji ze ¼róde³ programów napisanych w jêzyku Python
@@ -48,13 +48,11 @@ export PYTHONPATH
 python ./setup.py install --optimize=2 --root=$RPM_BUILD_ROOT
 find $RPM_BUILD_ROOT%{py_sitedir} -name \*.py | xargs rm -f
 
-gzip -9nf *.txt
-
 %clean
 rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%doc *.gz srcdocs/*
+%doc *.txt srcdocs/*
 %attr(755,root,root) %{_bindir}/*
 %{py_sitedir}/happydoclib
