@@ -1,4 +1,3 @@
-%include	/usr/lib/rpm/macros.python
 
 %define		pname HappyDoc
 %define		ver 2_1
