@@ -13,7 +13,7 @@ Group:		Development/Tools
 Source0:	http://prdownloads.sourceforge.net/happydoc/%{pname}_r%{ver}.tar.gz
 Patch0:		%{name}-pluginloader.patch
 Patch1:		%{name}-fix.patch
-URL:		http://happydoc.sourceforge.net
+URL:		http://happydoc.sourceforge.net/
 BuildRequires:	rpm-pythonprov >= 4.0.2-50
 %requires_eq	python-modules
 BuildArch:	noarch
