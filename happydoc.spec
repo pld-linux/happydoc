@@ -1,18 +1,16 @@
 %include	/usr/lib/rpm/macros.python
 
 %define		pname HappyDoc
-%define		ver 2_0_1
+%define		ver 2_1
 
 Summary:	Tool for extracting documentation from Python source code
 Summary(pl):	Narzêdzie do generowania dokumentacji ze ¼róde³ programów napisanych w jêzyku Python
 Name:		happydoc
-Version:	2.0.1
-Release:	2
+Version:	%(echo %ver | sed 's/_/./g')
+Release:	1
 License:	BSD-like
 Group:		Development/Tools
 Source0:	http://prdownloads.sourceforge.net/happydoc/%{pname}_r%{ver}.tar.gz
-Patch0:		%{name}-pluginloader.patch
-Patch1:		%{name}-fix.patch
 URL:		http://happydoc.sourceforge.net/
 BuildRequires:	rpm-pythonprov >= 4.0.2-50
 %pyrequires_eq	python-modules
@@ -37,8 +35,6 @@ które musz± byæ uruchamiane w odpowiednim ¶rodowisku.
 
 %prep
 %setup  -q -n %{pname}-r%{ver}
-%patch0 -p1
-%patch1 -p1
 
 %install
 rm -rf $RPM_BUILD_ROOT
