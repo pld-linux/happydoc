@@ -10,14 +10,6 @@ Version:	2.0.1
 Release:	1
 License:	BSD-like
 Group:		Development/Tools
-Group(cs):	Vıvojové prostøedky/Nástroje
-Group(de):	Entwicklung/Tools
-Group(es):	Desarrollo/Herramientas
-Group(fr):	Development/Outils
-Group(ja):	³«È¯/¥Ä¡¼¥ë
-Group(pl):	Programowanie/Narzêdzia
-Group(pt):	Desenvolvimento/Ferramentas
-Group(ru):	òÁÚÒÁÂÏÔËÁ/éÎÓÔÒÕÍÅÎÔÙ
 Source0:	http://prdownloads.sourceforge.net/happydoc/%{pname}_r%{ver}.tar.gz
 Patch0:		%{name}-pluginloader.patch
 Patch1:		%{name}-fix.patch
