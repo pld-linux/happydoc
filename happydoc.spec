@@ -12,7 +12,6 @@ Group:		Development/Tools
 Source0:	http://dl.sourceforge.net/happydoc/%{pname}_r%{ver}.tar.gz
 # Source0-md5:	7791988bb7498d4281636ab5f5852e67
 URL:		http://happydoc.sourceforge.net/
-BuildRequires:	rpm-pythonprov >= 4.0.2-50
 %pyrequires_eq	python-modules
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
