@@ -19,6 +19,7 @@ Group(pt):	Desenvolvimento/Ferramentas
 Group(ru):	Разработка/Инструменты
 Source0:	http://prdownloads.sourceforge.net/happydoc/%{pname}_r%{ver}.tar.gz
 Patch0:		%{name}-pluginloader.patch
+Patch1:		%{name}-fix.patch
 URL:		http://happydoc.sourceforge.net
 BuildRequires:	python-modules
 %requires_eq	python
@@ -44,6 +45,7 @@ odpowiednim ╤rodowisku.
 %prep
 %setup  -q -n %{pname}-r%{ver}
 %patch0 -p1
+%patch1 -p1
 
 %install
 rm -rf $RPM_BUILD_ROOT
