@@ -22,6 +22,7 @@ Patch0:		%{name}-pluginloader.patch
 Patch1:		%{name}-fix.patch
 URL:		http://happydoc.sourceforge.net
 BuildRequires:	python-modules
+BuildRequires:	rpm-pythonprov
 %requires_eq	python
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
