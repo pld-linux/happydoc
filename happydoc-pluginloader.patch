@@ -1,0 +1,21 @@
+diff -Nur HappyDoc-r2_0_1.orig/happydoclib/pluginloader.py HappyDoc-r2_0_1/happydoclib/pluginloader.py
+--- HappyDoc-r2_0_1.orig/happydoclib/pluginloader.py	Mon Nov 19 00:14:57 2001
++++ HappyDoc-r2_0_1/happydoclib/pluginloader.py	Thu Feb  7 02:02:40 2002
+@@ -134,7 +134,7 @@
+         # List of plugins
+         #
+         _module_list = glob.glob( happydoclib.path.join( self.plugin_dir,
+-                                               '%s*py' % self.plugin_set_name,
++                                               '%s*pyo' % self.plugin_set_name,
+                                                )
+                                   )
+         _module_list.sort()
+@@ -146,7 +146,7 @@
+                                    _module_name=_module_name,
+                                    )
+             module_name_parts = _module_name.split(os.sep)
+-            module_base_name = module_name_parts[-1][:-3]
++            module_base_name = module_name_parts[-1][:-4]
+             plugin_set_name = module_name_parts[-2]
+             if plugin_set_name != self.plugin_set_name:
+                 print 'EEEE Got local plugin set name "%s" instead of "%s"' % \
