@@ -7,7 +7,7 @@ Summary:	Tool for extracting documentation from Python source code
 Summary(pl):	Narzêdzie do generowania dokumentacji ze ¼róde³ programów napisanych w jêzyku Python
 Name:		happydoc
 Version:	%(echo %ver | sed 's/_/./g')
-Release:	1
+Release:	2
 License:	BSD-like
 Group:		Development/Tools
 Source0:	http://dl.sourceforge.net/happydoc/%{pname}_r%{ver}.tar.gz
@@ -42,8 +42,11 @@ rm -rf $RPM_BUILD_ROOT
 
 PYTHONPATH=$RPM_BUILD_ROOT%{py_sitedir}
 export PYTHONPATH
-python ./setup.py install --optimize=2 --root=$RPM_BUILD_ROOT
-find $RPM_BUILD_ROOT%{py_sitedir} -name \*.py | xargs rm -f
+python ./setup.py install \
+	--optimize=2 \
+	--root=$RPM_BUILD_ROOT
+
+find $RPM_BUILD_ROOT%{py_sitescriptdir} -name \*.py | xargs rm -f
 
 %clean
 rm -rf $RPM_BUILD_ROOT
@@ -52,4 +55,4 @@ rm -rf $RPM_BUILD_ROOT
 %defattr(644,root,root,755)
 %doc *.txt srcdocs/*
 %attr(755,root,root) %{_bindir}/*
-%{py_sitedir}/happydoclib
+%{py_sitescriptdir}/happydoclib
