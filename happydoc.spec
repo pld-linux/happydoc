@@ -6,7 +6,7 @@ Summary:	Tool for extracting documentation from Python source code
 Summary(pl):	Narzêdzie do generowania dokumentacji ze ¼róde³ programów napisanych w jêzyku Python
 Name:		happydoc
 Version:	%(echo %ver | sed 's/_/./g')
-Release:	2
+Release:	3
 License:	BSD-like
 Group:		Development/Tools
 Source0:	http://dl.sourceforge.net/happydoc/%{pname}_r%{ver}.tar.gz
