@@ -3,7 +3,7 @@
 %define		ver 2_1
 
 Summary:	Tool for extracting documentation from Python source code
-Summary(pl):	Narzêdzie do generowania dokumentacji ze ¼róde³ programów napisanych w jêzyku Python
+Summary(pl.UTF-8):   NarzÄ™dzie do generowania dokumentacji ze ÅºrÃ³deÅ‚ programÃ³w napisanych w jÄ™zyku Python
 Name:		happydoc
 Version:	%(echo %ver | sed 's/_/./g')
 Release:	3
@@ -24,13 +24,13 @@ output, rather that importing the module directly. This allows the
 user to generate documentation for modules which need special context
 to be imported.
 
-%description -l pl
-HappyDoc jest narzêdziem do generowania dokumentacji ze ¼róde³
-programów napisanych w jêzyku Python. Program ten, w przeciwno¶ci do
-innych aplikacji tego typu, które musz± uruchomiæ modu³, analizuje
-strukturê danego modu³u i na jej podstawie tworzy dokumentacjê.
-Pozwala to na generowanie dokumentacji dla tych modu³ów/programów,
-które musz± byæ uruchamiane w odpowiednim ¶rodowisku.
+%description -l pl.UTF-8
+HappyDoc jest narzÄ™dziem do generowania dokumentacji ze ÅºrÃ³deÅ‚
+programÃ³w napisanych w jÄ™zyku Python. Program ten, w przeciwnoÅ›ci do
+innych aplikacji tego typu, ktÃ³re muszÄ… uruchomiÄ‡ moduÅ‚, analizuje
+strukturÄ™ danego moduÅ‚u i na jej podstawie tworzy dokumentacjÄ™.
+Pozwala to na generowanie dokumentacji dla tych moduÅ‚Ã³w/programÃ³w,
+ktÃ³re muszÄ… byÄ‡ uruchamiane w odpowiednim Å›rodowisku.
 
 %prep
 %setup  -q -n %{pname}-r%{ver}
