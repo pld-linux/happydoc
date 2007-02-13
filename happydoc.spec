@@ -3,7 +3,7 @@
 %define		ver 2_1
 
 Summary:	Tool for extracting documentation from Python source code
-Summary(pl.UTF-8):   Narzędzie do generowania dokumentacji ze źródeł programów napisanych w języku Python
+Summary(pl.UTF-8):	Narzędzie do generowania dokumentacji ze źródeł programów napisanych w języku Python
 Name:		happydoc
 Version:	%(echo %ver | sed 's/_/./g')
 Release:	3
